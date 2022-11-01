@@ -8,5 +8,32 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-grid>
+    <ion-row>
+      <ion-col>TIME</ion-col>
+      <ion-col> </ion-col>
+      <ion-col> </ion-col>
+      <ion-col> </ion-col>
+      <ion-col> </ion-col>
+      <ion-col>P</ion-col>
+      <ion-col>J</ion-col>
+      <ion-col>V</ion-col>
+      <ion-col>E</ion-col>
+      <ion-col>D</ion-col>
+      <ion-col>GP</ion-col>
+      <ion-col>SG</ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid *ngFor="let time of times">
+    <ion-row>
+      <ion-col>{{time.nome}}</ion-col>
+      <ion-col>{{time.pontos}}</ion-col>
+      <ion-col>{{time.jogos}}</ion-col>
+      <ion-col>{{time.vitorias}}</ion-col>
+      <ion-col>{{time.empates}}</ion-col>
+      <ion-col>{{time.derrotas}}</ion-col>
+      <ion-col>{{time.golsPro}}</ion-col>
+      <ion-col>{{time.saldoDeGols}}</ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
