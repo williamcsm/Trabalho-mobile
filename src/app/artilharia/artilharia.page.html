@@ -1,9 +1,26 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>artilharia</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Artilharia</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <ion-item *ngFor="let artilheiro of artilheiros">
+    <ion-grid>
+      <ion-row >
+        <ion-col size="3" push="10">Gols</ion-col >
+        <ion-col size="9" pull="3">Nome</ion-col>
+        <ion-col size="3" push="10.5">{{artilheiro.gols}}</ion-col >
+        <ion-col size="9" pull="3">{{artilheiro.nome}}</ion-col>
+
+
+      </ion-row>
+    </ion-grid>
+  </ion-item>
+
 
 </ion-content>
